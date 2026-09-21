@@ -1,0 +1,20 @@
+# ============================================================
+# Happy StarZ Academy
+# Bluehost / Apache SPA Routing (.htaccess)
+# ============================================================
+
+<IfModule mod_rewrite.c>
+  RewriteEngine On
+  RewriteBase /
+
+  # 1. Don't rewrite real files or directories (images, js, css, etc.)
+  RewriteCond %{REQUEST_FILENAME} -f [OR]
+  RewriteCond %{REQUEST_FILENAME} -d
+  RewriteRule ^ - [L]
+
+  # 2. React / Vite SPA Fallback - routes like /about, /enquire resolve to index.html
+  RewriteRule ^ index.html [L]
+</IfModule>
+
+# Disable directory listing for security
+Options -Indexes

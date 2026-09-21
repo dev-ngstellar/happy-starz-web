@@ -1,0 +1,16 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 100 100" fill="none">
+  <!-- Educational doodles in warm palette: Plus, Multiply, Division, Equals, Root -->
+  <!-- Plus sign (Warm Coral) -->
+  <path d="M20 25H36M28 17V33" stroke="#E83E72" stroke-width="3.5" stroke-linecap="round"/>
+  <!-- Multiply / X (Bright Orange) -->
+  <path d="M72 18L86 32M86 18L72 32" stroke="#FF8A3D" stroke-width="3.5" stroke-linecap="round"/>
+  <!-- Division sign (Fresh Green) -->
+  <line x1="18" y1="75" x2="38" y2="75" stroke="#36B86B" stroke-width="3.5" stroke-linecap="round"/>
+  <circle cx="28" cy="68" r="2.5" fill="#36B86B"/>
+  <circle cx="28" cy="82" r="2.5" fill="#36B86B"/>
+  <!-- Equals sign (Golden Yellow) -->
+  <line x1="72" y1="72" x2="88" y2="72" stroke="#FFC83D" stroke-width="3.5" stroke-linecap="round"/>
+  <line x1="72" y1="80" x2="88" y2="80" stroke="#FFC83D" stroke-width="3.5" stroke-linecap="round"/>
+  <!-- Square root / Pi in center (Warm Charcoal) -->
+  <path d="M42 54L46 62L54 44H62" stroke="#20243A" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"/>
+</svg>

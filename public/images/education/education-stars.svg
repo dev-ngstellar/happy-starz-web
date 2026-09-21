@@ -1,0 +1,15 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 120 120" fill="none">
+  <!-- Dynamic Warm Educational Stars & Sparkles -->
+  <!-- Big Center Star (Golden Yellow) -->
+  <path d="M60 16L69.5 43.5L98 44.5L75.5 62L83.5 90L60 73.5L36.5 90L44.5 62L22 44.5L50.5 43.5L60 16Z" fill="#FFC83D"/>
+  <path d="M60 26L67 46L88 47L71 60L77 81L60 69L43 81L49 60L32 47L53 46L60 26Z" fill="#FDE047"/>
+  
+  <!-- Accent Warm Coral Star -->
+  <path d="M20 20L23 29L32 30.5L25 36.5L27 45.5L20 40.5L13 45.5L15 36.5L8 30.5L17 29L20 20Z" fill="#E83E72"/>
+  
+  <!-- Bright Orange Sparkle -->
+  <path d="M96 76L98 83L105 85L98 87L96 94L94 87L87 85L94 83L96 76Z" fill="#FF8A3D"/>
+  
+  <!-- Fresh Green Sparkle -->
+  <path d="M28 80L30 86L36 88L30 90L28 96L26 90L20 88L26 86L28 80Z" fill="#36B86B"/>
+</svg>

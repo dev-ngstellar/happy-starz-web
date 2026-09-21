@@ -1,0 +1,22 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 120 120" fill="none">
+  <!-- Friendly School Pencil tilted at 45 deg in warm palette -->
+  <g transform="rotate(45 60 60)">
+    <!-- Eraser (Warm Coral) -->
+    <path d="M50 20C50 15 70 15 70 20V28H50V20Z" fill="#E83E72"/>
+    <!-- Metal Ferrule (Golden/Silver) -->
+    <rect x="50" y="28" width="20" height="8" fill="#CBD5E1"/>
+    <line x1="50" y1="32" x2="70" y2="32" stroke="#94A3B8" stroke-width="1.5"/>
+    <!-- Pencil Body (Golden Yellow) -->
+    <rect x="50" y="36" width="20" height="50" fill="#FFC83D"/>
+    <!-- Pencil Facet stripes -->
+    <rect x="50" y="36" width="6" height="50" fill="#FF8A3D"/>
+    <rect x="64" y="36" width="6" height="50" fill="#FDE047"/>
+    <!-- Sharpened Wood (Cream) -->
+    <polygon points="50,86 70,86 60,104" fill="#FDE68A"/>
+    <!-- Graphite Tip (Deep Charcoal) -->
+    <polygon points="56,97 64,97 60,104" fill="#20243A"/>
+  </g>
+  <!-- Sparkles around tip (Golden Yellow & Coral) -->
+  <path d="M96 26L98 32L104 34L98 36L96 42L94 36L88 34L94 32L96 26Z" fill="#FFC83D"/>
+  <path d="M22 88L23.5 92.5L28 94L23.5 95.5L22 100L20.5 95.5L16 94L20.5 92.5L22 88Z" fill="#E83E72"/>
+</svg>

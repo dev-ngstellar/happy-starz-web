@@ -1,0 +1,18 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 120 120" fill="none">
+  <!-- Stack of 3 colorful academic books in warm palette -->
+  <!-- Bottom Book (Warm Charcoal / Dark Navy-Black) -->
+  <path d="M22 84C22 84 32 80 60 80C88 80 98 84 98 84V96C98 96 88 92 60 92C32 92 22 96 22 96V84Z" fill="#20243A"/>
+  <path d="M22 84C22 84 32 88 60 88C88 88 98 84 98 84L96 74C96 74 86 78 60 78C34 78 24 74 24 74L22 84Z" fill="#36B86B"/>
+  <!-- Middle Book (Warm Coral / Pink) -->
+  <path d="M26 66C26 66 36 62 60 62C84 62 94 66 94 66V76C94 76 84 72 60 72C36 72 26 76 26 76V66Z" fill="#C2185B"/>
+  <path d="M26 66C26 66 36 70 60 70C84 70 94 66 94 66L92 56C92 56 82 60 60 60C38 60 28 56 28 56L26 66Z" fill="#E83E72"/>
+  <!-- Bookmark ribbon (Golden Yellow) -->
+  <path d="M78 62V82L84 77L90 82V62H78Z" fill="#FFC83D"/>
+  <!-- Top Book (Bright Orange / Yellow Accent) -->
+  <path d="M30 46C30 46 40 42 60 42C80 42 90 46 90 46V54C90 54 80 50 60 50C40 50 30 54 30 54V46Z" fill="#E65100"/>
+  <path d="M30 46C30 46 40 50 60 50C80 50 90 46 90 46L88 36C88 36 78 40 60 40C42 40 32 36 32 36L30 46Z" fill="#FF8A3D"/>
+  <!-- Open Book Page highlight on top -->
+  <path d="M60 40V50" stroke="#FFE0B2" stroke-width="2" stroke-linecap="round"/>
+  <!-- Star accent -->
+  <path d="M60 22L62.5 28L69 29L64 33.5L65.5 40L60 36.5L54.5 40L56 33.5L51 29L57.5 28L60 22Z" fill="#FFC83D"/>
+</svg>
