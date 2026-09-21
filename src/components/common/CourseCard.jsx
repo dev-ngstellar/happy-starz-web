@@ -10,7 +10,6 @@ import {
   Languages,
   MessageSquare
 } from 'lucide-react';
-import { ComingSoonBadge } from './ComingSoonBadge';
 
 export default function CourseCard({ course, index = 0 }) {
   const {
@@ -18,11 +17,7 @@ export default function CourseCard({ course, index = 0 }) {
     mode,
     category,
     description,
-    duration = "Coming Soon",
-    ageGroup = "Coming Soon",
-    eligibility = "Coming Soon",
-    fees = "Coming Soon",
-    certification = "Coming Soon",
+    image,
     isFeatured = false
   } = course;
 
@@ -55,6 +50,18 @@ export default function CourseCard({ course, index = 0 }) {
 
   return (
     <article className={`course-card ${currentTheme.cardClass}`}>
+      {/* Course Visual Image */}
+      {image && (
+        <div className="course-card-image-wrap">
+          <img
+            src={image}
+            alt={name}
+            className="course-card-image"
+            loading="lazy"
+          />
+        </div>
+      )}
+
       {/* Header Badges & Icon */}
       <div className="course-card-header">
         <div style={{ display: 'flex', gap: '0.4rem', flexWrap: 'wrap', alignItems: 'center' }}>
@@ -84,29 +91,6 @@ export default function CourseCard({ course, index = 0 }) {
       {/* Course Title & Description */}
       <h3 className="course-card-title">{name}</h3>
       <p className="course-card-desc">{description}</p>
-
-      {/* 2 x 2 Compact Metadata Grid with Coming Soon indicators */}
-      <div className="course-meta-grid">
-        <div className="course-meta-item">
-          <span className="course-meta-label">Duration</span>
-          <ComingSoonBadge label={duration} />
-        </div>
-        <div className="course-meta-item">
-          <span className="course-meta-label">Age Group</span>
-          <ComingSoonBadge label={ageGroup} />
-        </div>
-        <div className="course-meta-item">
-          <span className="course-meta-label">Eligibility</span>
-          <ComingSoonBadge label={eligibility} />
-        </div>
-        <div className="course-meta-item">
-          <span className="course-meta-label">Course Fees</span>
-          <ComingSoonBadge label={fees} />
-        </div>
-      </div>
-
-      {/* Certification Note */}
-
 
       {/* Footer CTA */}
       <div className="course-card-footer">

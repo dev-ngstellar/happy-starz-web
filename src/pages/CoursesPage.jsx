@@ -215,17 +215,14 @@ export default function CoursesPage() {
               </p>
             </div>
 
-            {/* Events, Competitions & Extracurricular Note */}
+            {/* Events & Competitions */}
             <div className="app-card app-card-orange">
               <h3 style={{ fontSize: '1.45rem', fontWeight: 800, color: 'var(--charcoal-dark)', marginBottom: '0.75rem' }}>
                 {SERVICES_AND_ACTIVITIES.events.title}
               </h3>
-              <p style={{ fontSize: '0.96rem', color: 'var(--charcoal-muted)', lineHeight: 1.7, marginBottom: '1rem' }}>
+              <p style={{ fontSize: '0.96rem', color: 'var(--charcoal-muted)', lineHeight: 1.7, margin: 0 }}>
                 {SERVICES_AND_ACTIVITIES.events.description}
               </p>
-              <div style={{ backgroundColor: '#ffffff', padding: '0.85rem 1rem', borderRadius: 'var(--radius-sm)', fontSize: '0.88rem', color: 'var(--charcoal-dark)', border: '1px solid var(--border-warm)' }}>
-                <strong>Extracurricular Activities Note:</strong> {SERVICES_AND_ACTIVITIES.extracurricular.description}
-              </div>
             </div>
           </div>
         </div>

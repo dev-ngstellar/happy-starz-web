@@ -3,16 +3,14 @@ import { Link } from 'react-router-dom';
 import {
   Target,
   Compass,
-  GraduationCap,
   ArrowRight,
   ShieldCheck
 } from 'lucide-react';
 import {
   ABOUT_CONTENT,
   FOUNDER_INFO,
-  LEARNING_APPROACH
+  PILLARS_OF_FOUNDATION
 } from '../data/academyData';
-import { ComingSoonBadge, ComingSoonBox } from '../components/common/ComingSoonBadge';
 import PageBanner from '../components/common/PageBanner';
 
 export default function AboutPage() {
@@ -54,15 +52,20 @@ export default function AboutPage() {
 
             {/* Visual Box with 5 Pillars */}
             <div className="app-card app-card-coral" style={{ background: 'linear-gradient(145deg, #FFFFFF 0%, var(--bg-cream) 100%)', padding: '2.75rem' }}>
-              <h3 style={{ fontSize: '1.5rem', fontWeight: 800, color: 'var(--charcoal-dark)', marginBottom: '1.5rem' }}>
+              <div style={{ marginBottom: '0.6rem' }}>
+                <span className="section-badge section-badge-coral" style={{ margin: 0, fontSize: '0.78rem' }}>
+                  Core Methodology
+                </span>
+              </div>
+              <h3 style={{ fontSize: '1.6rem', fontWeight: 800, color: 'var(--charcoal-dark)', marginBottom: '1.6rem' }}>
                 Our 5 Pillars of Foundation
               </h3>
               <div style={{ display: 'flex', flexDirection: 'column', gap: '1.25rem' }}>
-                {LEARNING_APPROACH.map((item, idx) => (
-                  <div key={idx} style={{ display: 'flex', alignItems: 'flex-start', gap: '0.85rem' }}>
+                {PILLARS_OF_FOUNDATION.map((item) => (
+                  <div key={item.number} style={{ display: 'flex', alignItems: 'flex-start', gap: '0.95rem' }}>
                     <div style={{
-                      width: '28px',
-                      height: '28px',
+                      width: '32px',
+                      height: '32px',
                       borderRadius: '50%',
                       backgroundColor: 'var(--primary-coral)',
                       color: '#ffffff',
@@ -72,12 +75,13 @@ export default function AboutPage() {
                       fontSize: '0.82rem',
                       fontWeight: 800,
                       flexShrink: 0,
-                      marginTop: '0.2rem'
+                      marginTop: '0.15rem',
+                      boxShadow: '0 2px 6px rgba(232, 62, 114, 0.25)'
                     }}>
-                      ✓
+                      {item.number}
                     </div>
                     <div>
-                      <strong style={{ display: 'block', color: 'var(--charcoal-dark)', fontSize: '1.02rem', fontWeight: 800 }}>
+                      <strong style={{ display: 'block', color: 'var(--charcoal-dark)', fontSize: '1.02rem', fontWeight: 800, marginBottom: '0.2rem' }}>
                         {item.title}
                       </strong>
                       <span style={{ fontSize: '0.94rem', color: 'var(--charcoal-muted)', lineHeight: 1.55 }}>
@@ -158,27 +162,34 @@ export default function AboutPage() {
 
           <div className="app-card app-card-yellow" style={{ maxWidth: '980px', margin: '0 auto', padding: '3.5rem 3rem' }}>
             <div style={{ display: 'grid', gridTemplateColumns: 'repeat(auto-fit, minmax(260px, 1fr))', gap: '3rem', alignItems: 'center' }}>
-              {/* Photo Box Placeholder */}
+              {/* Photo Box */}
               <div style={{ textAlign: 'center' }}>
                 <div style={{
-                  width: '220px',
-                  height: '220px',
+                  width: '270px',
+                  height: '360px',
+                  maxWidth: '100%',
                   borderRadius: 'var(--radius-xl)',
-                  backgroundColor: 'var(--bg-cream)',
-                  border: '2px dashed var(--secondary-yellow-border)',
-                  margin: '0 auto 1.25rem auto',
+                  background: 'linear-gradient(160deg, #FFF9F2 0%, #FFECCE 100%)',
+                  boxShadow: '0 12px 30px rgba(32, 36, 58, 0.12)',
+                  border: '3px solid #ffffff',
+                  margin: '0 auto',
+                  overflow: 'hidden',
                   display: 'flex',
-                  flexDirection: 'column',
-                  alignItems: 'center',
+                  alignItems: 'flex-end',
                   justifyContent: 'center',
-                  gap: '0.65rem',
-                  color: 'var(--charcoal-dark)'
+                  position: 'relative'
                 }}>
-                  <GraduationCap size={52} color="var(--primary-coral)" />
-                  <span style={{ fontSize: '0.95rem', fontWeight: 800, color: 'var(--charcoal-dark)' }}>
-                    Founder Photo
-                  </span>
-                  <ComingSoonBadge label="Coming Soon" />
+                  <img
+                    src={FOUNDER_INFO.image || "/images/founder/founder.png"}
+                    alt={FOUNDER_INFO.name}
+                    style={{
+                      width: '100%',
+                      height: '100%',
+                      objectFit: 'cover',
+                      objectPosition: 'top center',
+                      display: 'block'
+                    }}
+                  />
                 </div>
               </div>
 

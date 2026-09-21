@@ -59,31 +59,38 @@ export const FOUNDER_INFO = {
   name: "Suganthi Palanisamy",
   designation: "Founder & Director – Happy StarZ Academy",
   profile: "I am passionate about helping children build strong academic foundations and develop confidence in learning. I believe that every child can learn when concepts are explained clearly and the right individual attention is given. My approach focuses on understanding concepts, identifying learning gaps, and supporting children through step-by-step learning.",
-  photoStatus: "Coming Soon"
+  image: "/images/founder/founder.png"
 };
 
-export const LEARNING_APPROACH = [
+export const PILLARS_OF_FOUNDATION = [
   {
-    title: "Strong Foundations",
-    description: "Building clear and strong basics."
+    number: "01",
+    title: "Strong Foundations First",
+    description: "Strengthening basic literacy, phonics, and numeracy concepts so children can progress confidently."
   },
   {
+    number: "02",
+    title: "Concept Clarity Over Rote Learning",
+    description: "Helping children develop a clear understanding of concepts before moving on to homework and practice."
+  },
+  {
+    number: "03",
     title: "Individual Attention",
-    description: "Understanding each child’s learning needs."
+    description: "Identifying each child’s unique learning needs and providing personalised guidance and support."
   },
   {
+    number: "04",
     title: "Step-by-Step Learning",
-    description: "Helping children understand concepts clearly."
+    description: "Following a structured and systematic approach that reduces confusion and helps children build confidence."
   },
   {
-    title: "Online & Offline Classes",
-    description: "Flexible learning options for children."
-  },
-  {
-    title: "Child-Centred Learning",
-    description: "Creating a supportive environment where children learn with confidence."
+    number: "05",
+    title: "Learning at a Child’s Own Pace",
+    description: "Creating a supportive, pressure-free environment where children can learn comfortably and grow into independent learners."
   }
 ];
+
+export const LEARNING_APPROACH = PILLARS_OF_FOUNDATION;
 
 export const ONLINE_PROGRAMMES = [
   {
@@ -98,7 +105,7 @@ export const ONLINE_PROGRAMMES = [
     fees: "Coming Soon",
     benefits: "Coming Soon",
     certification: "Coming Soon",
-    image: null
+    image: "/images/courses/phonics.jpeg"
   },
   {
     id: "online-tamil-basics",
@@ -112,7 +119,7 @@ export const ONLINE_PROGRAMMES = [
     fees: "Coming Soon",
     benefits: "Coming Soon",
     certification: "Coming Soon",
-    image: null
+    image: "/images/courses/Tamil Basics.jpeg"
   },
   {
     id: "online-tamil-academic",
@@ -126,7 +133,7 @@ export const ONLINE_PROGRAMMES = [
     fees: "Coming Soon",
     benefits: "Coming Soon",
     certification: "Coming Soon",
-    image: null
+    image: "/images/courses/tamil.jpeg"
   },
   {
     id: "online-hindi-basics",
@@ -140,7 +147,7 @@ export const ONLINE_PROGRAMMES = [
     fees: "Coming Soon",
     benefits: "Coming Soon",
     certification: "Coming Soon",
-    image: null
+    image: "/images/courses/hindi.jpeg"
   },
   {
     id: "online-maths-basics",
@@ -154,7 +161,7 @@ export const ONLINE_PROGRAMMES = [
     fees: "Coming Soon",
     benefits: "Coming Soon",
     certification: "Coming Soon",
-    image: null
+    image: "/images/courses/math basics.jpeg"
   },
   {
     id: "online-maths-academic",
@@ -168,7 +175,7 @@ export const ONLINE_PROGRAMMES = [
     fees: "Coming Soon",
     benefits: "Coming Soon",
     certification: "Coming Soon",
-    image: null
+    image: "/images/courses/math academic.jpeg"
   },
   {
     id: "online-vedic-maths",
@@ -182,7 +189,7 @@ export const ONLINE_PROGRAMMES = [
     fees: "Coming Soon",
     benefits: "Coming Soon",
     certification: "Coming Soon",
-    image: null
+    image: "/images/courses/vedic maths.jpeg"
   }
 ];
 
@@ -200,7 +207,7 @@ export const OFFLINE_PROGRAMMES = [
     fees: "Coming Soon",
     benefits: "Coming Soon",
     certification: "Coming Soon",
-    image: null
+    image: "/images/courses/cbse tution.jpeg"
   },
   {
     id: "offline-phonics",
@@ -214,7 +221,7 @@ export const OFFLINE_PROGRAMMES = [
     fees: "Coming Soon",
     benefits: "Coming Soon",
     certification: "Coming Soon",
-    image: null
+    image: "/images/courses/phonics.jpeg"
   },
   {
     id: "offline-spoken-english",
@@ -228,7 +235,7 @@ export const OFFLINE_PROGRAMMES = [
     fees: "Coming Soon",
     benefits: "Coming Soon",
     certification: "Coming Soon",
-    image: null
+    image: "/images/courses/spoken english.jpeg"
   },
   {
     id: "offline-tamil-basics",
@@ -242,7 +249,7 @@ export const OFFLINE_PROGRAMMES = [
     fees: "Coming Soon",
     benefits: "Coming Soon",
     certification: "Coming Soon",
-    image: null
+    image: "/images/courses/Tamil Basics.jpeg"
   },
   {
     id: "offline-abacus",
@@ -256,7 +263,7 @@ export const OFFLINE_PROGRAMMES = [
     fees: "Coming Soon",
     benefits: "Coming Soon",
     certification: "Coming Soon",
-    image: null
+    image: "/images/courses/abacus.jpeg"
   },
   {
     id: "offline-vedic-maths",
@@ -270,7 +277,7 @@ export const OFFLINE_PROGRAMMES = [
     fees: "Coming Soon",
     benefits: "Coming Soon",
     certification: "Coming Soon",
-    image: null
+    image: "/images/courses/vedic maths.jpeg"
   },
   {
     id: "offline-handwriting",
@@ -284,7 +291,7 @@ export const OFFLINE_PROGRAMMES = [
     fees: "Coming Soon",
     benefits: "Coming Soon",
     certification: "Coming Soon",
-    image: null
+    image: "/images/courses/handwriting.jpeg"
   }
 ];
 
@@ -294,10 +301,7 @@ export const SERVICES_AND_ACTIVITIES = {
   academicPrograms: {
     title: "Academic Programs",
     items: [
-      "Exclusive CBSE Tuition",
-      "Tamil Academic Support",
-      "Maths Academic Support",
-      "Foundation programmes in English, Tamil, Hindi and Maths"
+      "Exclusive CBSE Tuition and Foundation Programmes in English, Maths, Tamil and Hindi"
     ]
   },
   skillDevelopment: {
@@ -312,15 +316,11 @@ export const SERVICES_AND_ACTIVITIES = {
   },
   workshops: {
     title: "Workshops & Special Training",
-    description: "Special workshops and learning programmes may be conducted periodically based on students' learning needs."
+    description: "Special workshops and learning programmes are conducted periodically based on students' learning needs."
   },
   events: {
     title: "Events & Competitions",
     description: "Conducted periodically to encourage student participation, creativity and confidence."
-  },
-  extracurricular: {
-    title: "Extracurricular Activities",
-    description: "Not currently offered as a regular programme."
   }
 };
 
@@ -396,18 +396,59 @@ export const GALLERY_CATEGORIES = [
   "All",
   "Academy",
   "Classroom",
-  "Events",
-  "Student Activities",
-  "Achievements"
+  "Student Activities"
 ];
 
 export const GALLERY_ITEMS = [
-  { id: "g-1", category: "Academy", title: "Academy Learning Space", status: "Coming Soon" },
-  { id: "g-2", category: "Classroom", title: "Interactive Classroom Session", status: "Coming Soon" },
-  { id: "g-3", category: "Student Activities", title: "Step-by-Step Learning Activities", status: "Coming Soon" },
-  { id: "g-4", category: "Events", title: "Academy Periodic Events", status: "Coming Soon" },
-  { id: "g-5", category: "Classroom", title: "Foundations & Concept Practice", status: "Coming Soon" },
-  { id: "g-6", category: "Achievements", title: "Student Milestones & Recognitions", status: "Coming Soon" }
+  {
+    id: "g-1",
+    category: "Classroom",
+    title: "One-on-One Individual Guidance",
+    image: "/images/gallery/image1.jpeg",
+    description: "Dedicated mentor providing individual attention, identifying learning gaps, and strengthening concepts step by step."
+  },
+  {
+    id: "g-2",
+    category: "Classroom",
+    title: "Concept Clarity & Guided Practice",
+    image: "/images/gallery/image2.jpeg",
+    description: "Teachers helping children thoroughly understand textbook concepts before moving on to practice questions and homework."
+  },
+  {
+    id: "g-3",
+    category: "Classroom",
+    title: "Interactive Small Group Sessions",
+    image: "/images/gallery/image3.jpeg",
+    description: "Engaging classroom atmosphere where children learn collaboratively and build learning confidence."
+  },
+  {
+    id: "g-4",
+    category: "Academy",
+    title: "Academy Learning Space & Batches",
+    image: "/images/gallery/image4.jpeg",
+    description: "Spacious, well-structured, child-friendly learning environment at Happy StarZ Academy in Komarapalayam."
+  },
+  {
+    id: "g-5",
+    category: "Student Activities",
+    title: "Handwriting & Strokes Practice",
+    image: "/images/gallery/image5.jpeg",
+    description: "Structured handwriting practice helping students improve pencil grip, neatness, letter formation, and fine motor skills."
+  },
+  {
+    id: "g-6",
+    category: "Student Activities",
+    title: "Tamil Basics & Phonics Reading",
+    image: "/images/gallery/image6.jpeg",
+    description: "Young learners developing Tamil letter recognition, sound blending, and reading confidence through the Tamil Phonics Method."
+  },
+  {
+    id: "g-7",
+    category: "Student Activities",
+    title: "English Phonics & Sound Blending",
+    image: "/images/gallery/image7.jpeg",
+    description: "Hands-on phonics activity cards helping children master sound recognition, blending, decoding, and early reading fluency."
+  }
 ];
 
 export const SOCIAL_LINKS = {

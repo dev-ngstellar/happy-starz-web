@@ -1144,6 +1144,29 @@ select {
   border-color: var(--primary-coral);
 }
 
+.course-card-image-wrap {
+  width: 100%;
+  height: 200px;
+  border-radius: var(--radius-md);
+  overflow: hidden;
+  margin-bottom: 1.15rem;
+  background-color: var(--bg-cream);
+  position: relative;
+  box-shadow: 0 2px 8px rgba(32, 36, 58, 0.06);
+}
+
+.course-card-image {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  display: block;
+  transition: transform 0.4s cubic-bezier(0.16, 1, 0.3, 1);
+}
+
+.course-card:hover .course-card-image {
+  transform: scale(1.04);
+}
+
 .course-card-header {
   display: flex;
   justify-content: space-between;
@@ -1343,6 +1366,169 @@ select {
   background-color: var(--primary-coral) !important;
   color: #ffffff !important;
   box-shadow: 0 4px 14px rgba(232, 62, 114, 0.35);
+}
+
+/* ==========================================================================
+   PINTEREST-STYLE MASONRY PHOTO GALLERY
+   ========================================================================== */
+.section-gallery {
+  padding-top: 1.5rem !important;
+  padding-bottom: 2.5rem !important;
+  min-height: auto !important;
+  height: auto !important;
+}
+
+.section-gallery + section {
+  padding-top: 3rem !important;
+}
+
+.gallery-container {
+  width: 100%;
+  max-width: 1600px;
+  margin: 0 auto;
+  padding: 0 30px;
+}
+
+@media (max-width: 768px) {
+  .gallery-container {
+    padding: 0 16px;
+  }
+}
+
+@media (max-width: 480px) {
+  .gallery-container {
+    padding: 0 12px;
+  }
+}
+
+.gallery-header-row {
+  margin-bottom: 20px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex-wrap: wrap;
+  gap: 0.75rem;
+}
+
+.gallery-masonry {
+  width: 100%;
+  columns: 5 250px;
+  column-gap: 16px;
+}
+
+@media (min-width: 1400px) {
+  .gallery-masonry {
+    columns: 5;
+    column-gap: 16px;
+  }
+}
+
+@media (min-width: 1200px) and (max-width: 1399px) {
+  .gallery-masonry {
+    columns: 4;
+    column-gap: 16px;
+  }
+}
+
+@media (min-width: 768px) and (max-width: 1199px) {
+  .gallery-masonry {
+    columns: 3;
+    column-gap: 12px;
+  }
+}
+
+@media (min-width: 480px) and (max-width: 767px) {
+  .gallery-masonry {
+    columns: 2;
+    column-gap: 10px;
+  }
+}
+
+@media (max-width: 479px) {
+  .gallery-masonry {
+    columns: 2;
+    column-gap: 8px;
+  }
+}
+
+/* Individual Masonry Item */
+.gallery-item {
+  width: 100%;
+  margin-bottom: 16px;
+  break-inside: avoid;
+  -webkit-column-break-inside: avoid;
+  page-break-inside: avoid;
+  display: inline-block;
+  border-radius: 14px;
+  overflow: hidden;
+  position: relative;
+  cursor: pointer;
+  background-color: var(--bg-cream);
+  box-shadow: 0 2px 8px rgba(32, 36, 58, 0.06);
+  transition: transform var(--transition-normal), box-shadow var(--transition-normal);
+  vertical-align: top;
+}
+
+@media (max-width: 767px) {
+  .gallery-item {
+    margin-bottom: 10px;
+    border-radius: 10px;
+  }
+}
+
+@media (max-width: 479px) {
+  .gallery-item {
+    margin-bottom: 8px;
+    border-radius: 8px;
+  }
+}
+
+.gallery-item:hover {
+  transform: translateY(-2px);
+  box-shadow: 0 8px 22px rgba(32, 36, 58, 0.12);
+}
+
+.gallery-item img {
+  width: 100%;
+  height: auto;
+  display: block;
+  border-radius: 14px;
+  transition: transform 0.35s cubic-bezier(0.16, 1, 0.3, 1);
+}
+
+@media (max-width: 767px) {
+  .gallery-item img {
+    border-radius: 10px;
+  }
+}
+
+@media (max-width: 479px) {
+  .gallery-item img {
+    border-radius: 8px;
+  }
+}
+
+.gallery-item:hover img {
+  transform: scale(1.03);
+}
+
+/* Filtering adaptive columns: when 1, 2, or 3 items, do not leave empty blank columns */
+@media (min-width: 992px) {
+  .gallery-masonry.count-1 {
+    columns: 1 !important;
+    max-width: 680px;
+    margin: 0 auto;
+  }
+  .gallery-masonry.count-2 {
+    columns: 2 !important;
+    max-width: 860px;
+    margin: 0 auto;
+  }
+  .gallery-masonry.count-3 {
+    columns: 3 !important;
+    max-width: 1250px;
+    margin: 0 auto;
+  }
 }
 
 /* ==========================================================================

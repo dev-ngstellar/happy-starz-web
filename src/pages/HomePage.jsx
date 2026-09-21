@@ -9,11 +9,33 @@ import {
 } from 'lucide-react';
 import {
   ACADEMY_INFO,
-  ACADEMY_INTRO,
-  LEARNING_APPROACH
+  ACADEMY_INTRO
 } from '../data/academyData';
 import WhatsAppIcon from '../components/common/WhatsAppIcon';
 import HeroSection from '../components/home/HeroSection';
+
+const WHY_CHOOSE_POINTS = [
+  {
+    title: "Strong Foundations",
+    description: "Building clear and strong basics."
+  },
+  {
+    title: "Individual Attention",
+    description: "Understanding each child’s learning needs."
+  },
+  {
+    title: "Step-by-Step Learning",
+    description: "Helping children understand concepts clearly."
+  },
+  {
+    title: "Online & Offline Classes",
+    description: "Flexible learning options for children."
+  },
+  {
+    title: "Child-Centred Learning",
+    description: "Creating a supportive environment where children learn with confidence."
+  }
+];
 
 export default function HomePage() {
   return (
@@ -60,7 +82,7 @@ export default function HomePage() {
                 What We Offer
               </h2>
               <p style={{ fontSize: '1.1rem', lineHeight: 1.75, color: 'var(--charcoal-muted)', marginBottom: '1.75rem' }}>
-                At Happy StarZ Academy, we offer structured academic tuition and language foundation programmes designed to help every child understand concepts clearly and progress step by step.
+                At Happy StarZ Academy, we offer structured academic support and language foundation programmes designed to help every child understand concepts clearly and progress step by step.
               </p>
 
               {/* Academic Highlights List */}
@@ -110,7 +132,7 @@ export default function HomePage() {
                       Skill &amp; Language Foundation Programmes
                     </strong>
                     <span style={{ fontSize: '0.94rem', color: 'var(--charcoal-muted)' }}>
-                      Phonics, Spoken English, Tamil Basics, Hindi Basics, Abacus and Handwriting Improvement.
+                      Phonics, Spoken English, Tamil Basics, Hindi Basics, Abacus, Vedic Maths and Handwriting Improvement.
                     </span>
                   </div>
                 </div>
@@ -246,32 +268,32 @@ export default function HomePage() {
                 At Happy StarZ Academy, understanding the concept always comes before completing academic work. We identify learning gaps early and guide every child at their own natural pace.
               </p>
 
-              {/* 5 Learning Approach Highlights */}
+              {/* 5 Why Choose Highlights */}
               <div style={{ display: 'flex', flexDirection: 'column', gap: '0.85rem', marginBottom: '2rem' }}>
-                {LEARNING_APPROACH.map((pillar, idx) => (
-                  <div key={idx} style={{ display: 'flex', alignItems: 'flex-start', gap: '0.75rem' }}>
+                {WHY_CHOOSE_POINTS.map((point, idx) => (
+                  <div key={point.title} style={{ display: 'flex', alignItems: 'flex-start', gap: '0.85rem' }}>
                     <div style={{
                       width: '28px',
                       height: '28px',
                       borderRadius: '50%',
-                      backgroundColor: 'var(--primary-blue)',
-                      color: '#FF5A8D',
+                      backgroundColor: 'var(--primary-coral)',
+                      color: '#ffffff',
                       display: 'flex',
                       alignItems: 'center',
                       justifyContent: 'center',
-                      fontSize: '0.8rem',
+                      fontSize: '0.78rem',
                       fontWeight: 800,
                       flexShrink: 0,
                       marginTop: '0.15rem'
                     }}>
-                      ✓
+                      0{idx + 1}
                     </div>
                     <div>
                       <strong style={{ color: 'var(--charcoal-dark)', fontSize: '0.98rem', fontWeight: 800 }}>
-                        {pillar.title}:
-                      </strong>{' '}
+                        {point.title} –{' '}
+                      </strong>
                       <span style={{ fontSize: '0.92rem', color: 'var(--charcoal-muted)', lineHeight: 1.55 }}>
-                        {pillar.description}
+                        {point.description}
                       </span>
                     </div>
                   </div>
