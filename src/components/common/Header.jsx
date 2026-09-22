@@ -103,7 +103,7 @@ export default function Header() {
 
           {/* Nav Actions / CTA */}
           <div className="nav-actions">
-            <Link to="/enquire" className="btn btn-primary btn-sm">
+            <Link to="/enquire" className="btn btn-primary btn-sm header-enquire-btn">
               <span>Enquire Now</span>
               <ArrowRight size={15} />
             </Link>

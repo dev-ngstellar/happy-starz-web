@@ -28,7 +28,7 @@ export default function GalleryPage() {
         contentMaxWidth="880px"
       >
         {/* Category Filter Tabs (Single Row Responsive Pill Control) */}
-        <div className="gallery-filter-wrapper">
+        <div className="gallery-filter-wrapper gallery-filters">
           <div className="gallery-filter-container" role="tablist" aria-label="Gallery Categories">
             {GALLERY_CATEGORIES.map((cat) => (
               <button
@@ -37,7 +37,7 @@ export default function GalleryPage() {
                 role="tab"
                 aria-selected={selectedCategory === cat}
                 onClick={() => setSelectedCategory(cat)}
-                className={`gallery-filter-btn ${selectedCategory === cat ? 'active' : ''}`}
+                className={`gallery-filter-btn gallery-filter ${selectedCategory === cat ? 'active' : ''}`}
               >
                 {cat}
               </button>
@@ -59,7 +59,7 @@ export default function GalleryPage() {
             </div>
           </div>
 
-          <div className={`gallery-masonry count-${filteredItems.length}`}>
+          <div className={`gallery-masonry gallery-grid count-${filteredItems.length}`}>
             {filteredItems.map((item) => (
               <div
                 key={item.id}

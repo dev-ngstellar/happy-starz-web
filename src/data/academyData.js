@@ -448,6 +448,20 @@ export const GALLERY_ITEMS = [
     title: "English Phonics & Sound Blending",
     image: "/images/gallery/image7.jpeg",
     description: "Hands-on phonics activity cards helping children master sound recognition, blending, decoding, and early reading fluency."
+  },
+  {
+    id: "g-8",
+    category: "Student Activities",
+    title: "Independent Reading & Phonics Application",
+    image: "/images/gallery/image8.jpeg",
+    description: "Young learner practicing independent reading skills, decoding words with phonics rules and discovering the joy of reading books."
+  },
+  {
+    id: "g-9",
+    category: "Classroom",
+    title: "Interactive Phonics & Flashcard Mentoring",
+    image: "/images/gallery/image9.jpeg",
+    description: "Dedicated one-on-one mentor guiding a student through hands-on phonics flashcards to reinforce letter sounds and word recognition."
   }
 ];
 
