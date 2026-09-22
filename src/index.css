@@ -1429,22 +1429,6 @@ select {
   column-gap: 18px;
 }
 
-@media (min-width: 1440px) {
-  .gallery-masonry,
-  .gallery-grid {
-    column-count: 4;
-    column-gap: 18px;
-  }
-}
-
-@media (max-width: 1439px) {
-  .gallery-masonry,
-  .gallery-grid {
-    column-count: 3;
-    column-gap: 16px;
-  }
-}
-
 @media (max-width: 768px) {
   .gallery-masonry,
   .gallery-grid {
